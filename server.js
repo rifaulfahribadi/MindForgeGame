@@ -1,7 +1,9 @@
 const express = require('express');
+const cors = require('cors');  // Tambahkan ini
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(cors());  // Tambahkan ini untuk menggunakan middleware CORS
 app.use(express.json());
 
 const questions = [
