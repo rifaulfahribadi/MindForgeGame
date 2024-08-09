@@ -3,7 +3,7 @@ document.getElementById('start-game-btn').addEventListener('click', function() {
 });
 
 function startGame() {
-    fetch('/start_game', {
+    fetch('https://my-mindforge-backend.herokuapp.com/start_game', {
         method: 'POST'
     })
     .then(response => response.json())
